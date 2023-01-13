@@ -1,0 +1,93 @@
+/* For mobile phones: */
+
+* {
+	font-family: 'Inter', sans-serif;
+	box-sizing: border-box;
+}
+
+#container {
+	margin: 36px auto;
+	max-width: 900px;
+	overflow: hidden
+
+}
+
+#mainText {
+
+}
+
+.col {
+	padding: 0 24px 24px;
+}
+
+.border {
+	border-top: 1px solid black;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 1.6em;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+h3 {
+	font-weight: 600;	
+	font-size: 0.7em;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 1em;
+} 
+
+li {
+
+}
+
+
+
+
+  /* For desktop: */
+@media only screen and (min-width: 768px) {
+	#container{
+		margin: 96px auto;
+	}
+
+	.col {
+		float: left;
+	}
+
+	.col-6 {
+		width: 50%;
+
+	}
+
+	.col-4 {
+		width: 33.3%;
+	}
+
+	.col-12 {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 3em;
+	}
+
+	h3 {
+	}
+ 
+}
