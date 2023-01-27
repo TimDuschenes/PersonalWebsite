@@ -71,26 +71,36 @@
     </main>
 
     <tw-storydata name="ChatBot" startnode="61" creator="Twine" creator-version="2.6.0" format="Trialogue" format-version="0.1.1" ifid="C710E8FD-5436-4CD0-A489-B8D47D48BABD" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">:root {
-  --bg-color: #000;
-  --user-color: white;
-  --speaker-color: #A00;
-  --sidebar-bg-color: #000;
-  --navbar-bg-color: #000;
-  --passage-bg-color: #FFF;
-  --passage-text-color: #000;
+  --bg-color: #121212;
+  --user-color: white; /*uh oh what does this do*/
+  --speaker-color: #FFF;
+  --sidebar-bg-color: #121212;
+  --navbar-bg-color: #121212;
+  --passage-bg-color: #FFFFFF0D;
+  --passage-text-color: #FFF;
   --navbar-height: 0px;
   --user-response-panel-height: 192px;
 }
 
 .bg-white {
-  /* overriding and !important in the source*/
-  background-color: black !important;
+  /* overriding an !important in the source*/
+  background-color: #121212 !important;
 }
 
+/*Set colour of non-speaker passages*/
 .meta-passage p {
   color: #888;
 }
 
+a {
+  color: #7AA5EF;
+}
+
+a:hover {
+  color: #5688DF;
+}
+
+/*Set height of elements*/
 .minh-full {
     min-height: calc(100vh - var(--navbar-height) - var(--user-response-panel-height))
 }
@@ -103,12 +113,16 @@ body {
   display: none;
 }
 
+/*Chat panel*/
 .chat-panel{
   padding-bottom: 8px;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  /*Set the typography for the main */
+  line-height: 1.3;
 }
 
+/*User response panel*/
 .user-response-panel hr {
   display: none;
 }
@@ -119,12 +133,14 @@ body {
 
 .user-response-panel {
   box-sizing: border-box;
-  border-top: 2px dotted white;
-  border-left: 1px solid white;
-    border-right: 1px solid white;
+  /*border-top: 2px dotted white;*/
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  background-color: #191919;
   padding: 0px;
 }
 
+/*Removing panel borders at smaller sizes*/
 @media (max-width: 991.98px){
   .chat-panel {
     border-left: none;
@@ -137,6 +153,7 @@ body {
   }
 }
 
+/*User response alignment*/
 .user-reponse-wrapper {
   /*NOTE THE TYPO HERE IS CORRECT*/
   display: flex;
@@ -155,42 +172,12 @@ a.user-response:first-child {
   margin-right: 15px !important;
 }
 
-.chat-passage {
-  padding: 12px 18px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.chat-passage[data-speaker='Tim'] {
-  border-radius: 12px 12px 12px 0;
-}  
-
-.chat-passage[data-speaker='you'] {
-  border-radius: 12px 12px 0 12px;
-  margin-right: 0;
-}
-
-.chat-passage:before {
-  display: none;
-}
-
-.chat-passage-wrapper[data-speaker='Tim']:before {
-  display: none;
-}
-
-.chat-passage-wrapper[data-speaker='you']:after {
-  display: none;
-}
-.chat-passage-wrapper[data-speaker='you'] .chat-passage::before {
-  display: none;
-}
-
 .user-response-panel .user-response {
   display: inline-block;
-  border-radius: 12px 12px 0 12px;
-  padding: 12px 18px;
+  border-radius: 18px 18px 0 18px;
+  padding: 7px 12px;
   margin: 0.25rem;
-  background-color: black;
+  background-color: none;
   color: white;
   border: 1px solid white;
   transition: none;
@@ -199,20 +186,50 @@ a.user-response:first-child {
 
 .user-response:hover {
   text-decoration: none;
-  background-color: #fff;
+  background-color: #444;
   border: 1px solid white;
   /*Note that border is being applied by user colour*/
-  color: #000
 }
+
+/*Chat passages*/
+.chat-passage {
+  color: #FFF;
+  padding: 7px 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.chat-passage[data-speaker='Tim'] {
+  border-radius: 18px 18px 18px 0;
+}  
+
+.chat-passage[data-speaker='you'] {
+  border-radius: 18px 18px 0 18px;
+  margin-right: 0;
+  background-color: #FFFFFF33;
+}
+
+/*Hiding all the extra stuff*/
+.chat-passage:before {
+  display: none;
+}
+.chat-passage-wrapper[data-speaker='Tim']:before {
+  display: none;
+}
+.chat-passage-wrapper[data-speaker='you']:after {
+  display: none;
+}
+.chat-passage-wrapper[data-speaker='you'] .chat-passage::before {
+  display: none;
+}
+
+/*Custom scrollbar*/
 
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #999999 #000000;
+  scrollbar-color: #888 none;
 }
-
-
-/*custom scrollbar*/
 
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
@@ -221,20 +238,20 @@ a.user-response:first-child {
 }
 *::-webkit-scrollbar-track {
   border-radius: 5px;
-  background-color: #000000;
+  background-color: none;
 }
 
 *::-webkit-scrollbar-track:hover {
-  background-color: #333333;
+  background-color: none;
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: #333333;
+  background-color: none;
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: #999999;
+  background-color: #888;
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -248,9 +265,9 @@ a.user-response:first-child {
 
 
 
-
-
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="speaker-Tim" color="red"></tw-tag><tw-passagedata pid="1" name="Start" tags="speaker-Tim" position="2650,150" size="100,100">Hello! It&#39;s nice to meet you. What brings you here today?
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.onload = function () {
+  window.scrollTo(0, 0);
+}</script><tw-tag name="speaker-Tim" color="red"></tw-tag><tw-passagedata pid="1" name="Start" tags="speaker-Tim" position="2650,150" size="100,100">Hello! It&#39;s nice to meet you. What brings you here today?
 
 [[I&#39;m interested in hiring you]] 
 
@@ -296,7 +313,7 @@ a.user-response:first-child {
 
 [[Tell me more about yourself -&gt;What are some things that make you happy?]] 
 [[What kind of work do you do?]] 
-[[Can I see your resume?]]</tw-passagedata><tw-passagedata pid="16" name="Can I see your resume?" tags="speaker-Tim" position="2850,550" size="100,100">Of course! Here&#39;s a link &lt;link tk&gt;
+[[Can I see your resume?]]</tw-passagedata><tw-passagedata pid="16" name="Can I see your resume?" tags="speaker-Tim" position="2850,550" size="100,100">Of course! Here&#39;s a &lt;a href=&quot;Assets/221202_TimDuschenes_Resume.pdf&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;.
 
 &lt;% story.showDelayed(&quot;Was there a project&quot;); %&gt;</tw-passagedata><tw-passagedata pid="17" name="Was there a project" tags="speaker-Tim" position="2850,675" size="100,100">Was there a project you had in mind that I could help you with?
 
@@ -322,7 +339,7 @@ a.user-response:first-child {
 
 &lt;% story.showDelayed(&quot;I can go all day without thinking about design&quot;); %&gt;</tw-passagedata><tw-passagedata pid="24" name="I can go all day without thinking about design" tags="speaker-Tim" position="1800,875" size="100,100">I can go all day without thinking about design, but I&#39;ll still have to eat three times
 
-[[Have you done any work in food?]]</tw-passagedata><tw-passagedata pid="25" name="Have you done any work in food?" tags="speaker-Tim" position="1800,1000" size="100,100">A little! I was a 2021-22 Forefront Fellow at the Urban Design Forum. I helped make some cool materials for new immigrants into New York who want to start food businesses.
+[[Have you done any work in food?]]</tw-passagedata><tw-passagedata pid="25" name="Have you done any work in food?" tags="speaker-Tim" position="1800,1000" size="100,100">A little! I was a 2021-22 Forefront Fellow at the Urban Design Forum. I helped make some &lt;a href=&quot;https://urbandesignforum.org/initiative/neighborhood-fare/new-markets-for-new-americans/&quot; target=&quot;_blank&quot;&gt;cool materials&lt;/a&gt; for new immigrants into New York who want to start food businesses.
 
 &lt;% story.showDelayed(&quot;Was there a project&quot;); %&gt;</tw-passagedata><tw-passagedata pid="26" name="How do you like living here?" tags="speaker-Tim" position="2250,1250" size="100,100">How do you like living here?
 
@@ -371,7 +388,7 @@ a.user-response:first-child {
 
 [[How did you make this site?]]</tw-passagedata><tw-passagedata pid="42" name="How did you make this site?" tags="speaker-Tim" position="2575,2175" size="100,100">It&#39;s mostly built using Twine and Trialogue. Then just some CSS!
 
-[[Do you make a lot of websites?]]</tw-passagedata><tw-passagedata pid="43" name="Do you make a lot of websites?" tags="speaker-Tim" position="2575,2300" size="100,100">I&#39;ve made a few! I&#39;m a self-taught code-writer, but I&#39;m good at picking up new technical skills, and especially new software. I love websites as an art form (check out my are.na channel!). Recently I made a pepper database for a local farmer.
+[[Do you make a lot of websites?]]</tw-passagedata><tw-passagedata pid="43" name="Do you make a lot of websites?" tags="speaker-Tim" position="2575,2300" size="100,100">I&#39;ve made a few! I&#39;m a self-taught code-writer, but I&#39;m good at picking up new technical skills, and especially new software. I love websites as an art form (check out my &lt;a href=&quot;https://www.are.na/tim-duschenes/websites-1524154573&quot; target=&quot;_blank&quot;&gt;are.na channel&lt;/a&gt;!). Recently I made a &lt;a href=&quot;https://timduschenes.github.io/Peppers/&quot; target=&quot;_blank&quot;&gt;pepper database&lt;/a&gt; for a local farmer.
 
 [[What other personal things have you been working on recently?]]
 [[You seem to like food a lot]] 
