@@ -1,0 +1,641 @@
+:: StoryTitle
+ChatBot
+
+
+:: StoryData
+{
+  "ifid": "C710E8FD-5436-4CD0-A489-B8D47D48BABD",
+  "format": "Trialogue",
+  "format-version": "0.1.1",
+  "start": "Start prompt",
+  "tag-colors": {
+    "speaker-Tim": "red"
+  },
+  "zoom": 0.3
+}
+
+
+:: About this website [speaker-Tim] {"position":"2750,2025","size":"100,100"}
+Tactically, this website just directs you to my email address (did I mention it's timduschenes@gmail.com?) but emotionally, it also helps you get to know me a bit.
+
+[[How did you make this site?]]
+
+
+:: Actually, I need help figuring that out [speaker-Tim] {"position":"4000,1225","size":"100,100"}
+That's totally fine, and I'd love to help you figure it out. Drop me an email at timduschenes@gmail.com
+
+<% story.showDelayed("Was there anything else"); %>
+
+
+:: Are you also a New Yorker? [speaker-Tim] {"position":"2325,625","size":"100,100"}
+Are you also a New Yorker?
+
+[[Yes, I am!]]
+
+[[No, I'm not]]
+
+
+:: Branding [speaker-Tim] {"position":"4200,1225","size":"100,100"}
+Honestly, I don't really do much 'pure' branding work. If you want to know how people think about your brand, and what your new strategic direction should be, I can help. But if you want a new logo or brand colours, let me put you in touch with a friend instead!
+
+[[You spell 'colors' with a 'u'?]]
+[[Oh yeah, I mean the brand strategy bit->Strategy]] 
+[[Sure, put me in touch]]
+
+
+
+:: Brooklyn [speaker-Tim] {"position":"2175,975","size":"100,100"}
+Same! I'm in Park Slope.
+
+<% story.showDelayed("How do you like living here?"); %>
+
+
+:: Can I see your resume? [speaker-Tim] {"position":"2850,550","size":"100,100"}
+Of course! Here's a <a href="Assets/221202_TimDuschenes_Resume.pdf" target="_blank">link</a>.
+
+<% story.showDelayed("Was there a project"); %>
+
+
+:: Data ethics [speaker-Tim] {"position":"3050,1775","size":"100,100"}
+I helped a big consumer goods company understand the ethcial issues around their use of consumer data. Then I helped them identify the best safeguards for ensuring consumer trust, and helped them advocate successfully within the company.
+
+[[Fine, but what do you actually MAKE?]] 
+[[Can I see your resume?]] 
+
+
+:: Design research or codesign [speaker-Tim] {"position":"3800,1225","size":"100,100"}
+Sounds good. I've done a fair bit of 'traditional' human-centered design research, but I much prefer working in more deeply engaged ways that give communities more agency and access to resources. I'm always happy to write research plans and conduct/facilitate research interviews or workshops.
+
+[[hrmm that doesn't sound quite right]]
+[[That sounds right. I'll email you now!]]
+
+
+:: Do you enjoy living here? [speaker-Tim] {"position":"2325,500","size":"100,100"}
+I do! It definitely has up and downsides. At its best, New York is a beautiful collision. At its worst, it can be selfish and uncaring.
+
+<% story.showDelayed("Are you also a New Yorker?"); %>
+
+
+:: Do you make a lot of websites? [speaker-Tim] {"position":"2575,2300","size":"100,100"}
+I've made a few! I'm a self-taught code-writer, but I'm good at picking up new technical skills, and especially new software. I love websites as an art form (check out my <a href="https://www.are.na/tim-duschenes/websites-1524154573" target="_blank">are.na channel</a>!). Recently I made a <a href="https://timduschenes.github.io/Peppers/" target="_blank">pepper database</a> for a local farmer.
+
+[[What other personal things have you been working on recently?]]
+[[You seem to like food a lot]] 
+
+
+
+:: Don't worry [speaker-Tim] {"position":"4300,1550","size":"100,100"}
+Don't worry, I promise I won't make your organization sound English. And to answer the unspoken questions: yes I'm also an American citizen, so no I don't need visa sponsorship.
+
+[[Hah! Tell me more about other kinds of work you do->What kind of thing]] 
+
+
+:: Fed gov [speaker-Tim] {"position":"3050,1400","size":"100,100"}
+I've worked with the federal government to improve the experience of receiving benefits
+
+<% story.showDelayed("Philly"); %>
+
+
+
+
+:: Fine, but what do you actually MAKE? [speaker-Tim] {"position":"2750,1500","size":"100,100"}
+Lol I get this a lot
+
+<% story.showDelayed("What I make"); %>
+
+
+:: Give me an example [speaker-Tim] {"position":"3050,1275","size":"100,100"}
+Sure. Some things I've worked on in the past few years:
+
+<% story.showDelayed("Fed gov"); %>
+
+
+:: Have you done any work in food? [speaker-Tim] {"position":"1800,1000","size":"100,100"}
+A little! I was a 2021-22 Forefront Fellow at the Urban Design Forum. I helped make some <a href="https://urbandesignforum.org/initiative/neighborhood-fare/new-markets-for-new-americans/" target="_blank">cool materials</a> for new immigrants into New York who want to start food businesses.
+
+<% story.showDelayed("Was there a project"); %>
+
+
+:: How did you get into this? [speaker-Tim] {"position":"3050,1975","size":"100,100"}
+I did a degree in industrial design, but I was mostly interested in people and how they interact. I found early on that strategy and service design let me get more to the heart of the human side.
+
+<% story.showDelayed("What I've done"); %>
+
+
+:: How did you make this site? [speaker-Tim] {"position":"2575,2175","size":"100,100"}
+It's mostly built using Twine and Trialogue. Then just some CSS!
+
+[[Do you make a lot of websites?]]
+
+
+:: How do you like living here? [speaker-Tim] {"position":"2250,1250","size":"100,100"}
+How do you like living here?
+
+[[I love it]]
+[[It could be better]]
+
+
+:: How long have you been in New York? [speaker-Tim] {"position":"2325,375","size":"100,100"}
+I've been in NYC for about six years now. It really sneaks up on you...
+
+[[Do you enjoy living here?]]
+
+
+
+:: I also bike a lot [speaker-Tim] {"position":"1900,500","size":"100,100"}
+I also bike a lot
+
+[[What've you been cooking recently?]]
+[[We should ride together!]]
+
+
+
+:: I can go all day without thinking about design [speaker-Tim] {"position":"1800,875","size":"100,100"}
+I can go all day without thinking about design, but I'll still have to eat three times
+
+[[Have you done any work in food?]]
+
+
+:: I just want to know a bit about you [speaker-Tim] {"position":"2325,225","size":"100,100"}
+Sure! What do you want to know?
+
+[[How long have you been in New York?]]
+[[What kind of work do you do?]]
+[[What are some things that make you happy?]]
+
+
+
+:: I love it [speaker-Tim] {"position":"2175,1400","size":"100,100"}
+Aw that's so nice to hear. I kind of get in the habit of talking down New York, but it's really such a beautiful place.
+
+<% story.showDelayed("Is there anything else_1"); %>
+
+
+:: I'm interested in hiring you [speaker-Tim] {"position":"3575,250","size":"100,100"}
+That's great! The first thing you should do is definitely drop me an email at timduschenes@gmail.com.  I'm currently looking for freelance work.
+
+<% story.showDelayed("What kind of thing"); %>
+
+
+:: In the meantime [speaker-Tim] {"position":"2425,875","size":"100,100"}
+In the meantime, what else can I help you with?
+
+[[Tell me more about yourself ->What are some things that make you happy?]] 
+[[What kind of work do you do?]] 
+[[Can I see your resume?]]
+
+
+:: Is there anything else_1 [speaker-Tim] {"position":"2175,1550","size":"100,100"}
+Is there anything else you want to know?
+
+[[What are some things that make you happy?]] 
+[[What kind of work do you do?]] 
+
+
+:: It could be better [speaker-Tim] {"position":"2325,1400","size":"100,100"}
+I agree. I've done a few projects working on improving city services, and it's work I really enjoy.
+
+[[Can I see your resume?]] 
+[[What kind of work do you do?]] 
+
+
+:: Like this website! [speaker-Tim] {"position":"2750,1875","size":"100,100"}
+Exactly!
+
+<% story.showDelayed("About this website"); %>
+
+
+:: Manhattan [speaker-Tim] {"position":"2175,875","size":"100,100"}
+I don't know how you do it. I could never.
+
+<% story.showDelayed("How do you like living here?"); %>
+
+
+:: Medicare choice [speaker-Tim] {"position":"3050,1650","size":"100,100"}
+I helped a foundation understand why some people have a harder time choosing their Medicare coverage than others
+
+<% story.showDelayed("Data ethics"); %>
+
+
+:: No, I'm all good [speaker-Tim] {"position":"3775,2125","size":"100,100"}
+Alright. Well, it was a pleasure meeting you!
+
+[[You too]]
+
+
+:: No, I'm just browsing [speaker-Tim] {"position":"2850,800","size":"100,100"}
+Not a problem at all. Is there anything else you want to chat about?
+
+[[What are some things that make you happy?]] 
+[[What kind of work do you do?]] 
+[[How long have you been in New York?]] 
+
+
+:: No, I'm not [speaker-Tim] {"position":"2400,750","size":"100,100"}
+Well, I hope you can come and visit at some point soon. Let me know if you do!
+
+<% story.showDelayed("In the meantime"); %>
+
+
+:: Philly [speaker-Tim] {"position":"3050,1525","size":"100,100"}
+I helped the City of Philadelphia understand and improve the experience of first-time tax-filers trying to access the Child Tax Credit
+
+<% story.showDelayed("Medicare choice"); %>
+
+
+:: Queens [speaker-Tim] {"position":"2300,875","size":"100,100"}
+You have alllll the best food. I always come up to Jackson Heights/Woodside/Corona to eat delicious things.
+
+[[You seem to like food a lot]] 
+
+
+:: Service design [speaker-Tim] {"position":"3575,1225","size":"100,100"}
+I've worked on services for city and federal governements, and processes for all scales of business, so I can probably help you.
+
+[[hrmm that doesn't sound quite right]]
+[[That sounds right. I'll email you now!]]
+
+
+:: Start [speaker-Tim] {"position":"2650,150","size":"100,100"}
+Hello! It's nice to meet you. What brings you here today?
+
+[[I'm interested in hiring you]] 
+
+[[I just want to know a bit about you]] 
+
+
+:: Start prompt {"position":"2650,25","size":"100,100"}
+Use the prompts below to chat with Tim
+
+<% story.showDelayed("Start"); %>
+
+
+:: Staten Island [speaker-Tim] {"position":"2300,975","size":"100,100"}
+Honestly, I have only been to Staten Island a couple of times. I bike over the bridge from Jersey!
+
+<% story.showDelayed("How do you like living here?"); %>
+
+
+:: Strategy [speaker-Tim] {"position":"3375,1225","size":"100,100"}
+Great. I can help with strategic planning, brand narratives and architecture, pitch decks, and a bunch of other stuff.
+
+[[hrmm that doesn't sound quite right]]
+[[That sounds right. I'll email you now!]]
+
+
+:: Sure, put me in touch [speaker-Tim] {"position":"4125,1425","size":"100,100"}
+Happy to! Just drop me an email at timduschenes@gmail.com and we can chat more.
+
+<% story.showDelayed("Was there anything else"); %>
+
+
+:: Thanks {"position":"3775,2425","size":"100,100"}
+Thank you for taking some time to chat with Tim. Click <a href="https://www.timduschenes.com">here</a> to return to his website.
+
+
+:: That sounds right. I'll email you now! [speaker-Tim] {"position":"3600,1550","size":"100,100"}
+Fantastic!
+
+<% story.showDelayed("Was there anything else"); %>
+
+
+:: The Bronx [speaker-Tim] {"position":"2250,1100","size":"100,100"}
+Urgh I should go to the Bronx more. I don't know the borough very well but it seems like there's so much going on. If you have recs, please send them to timduschenes@gmail.com
+
+<% story.showDelayed("How do you like living here?"); %>
+
+
+:: Then I help them [speaker-Tim] {"position":"2750,1375","size":"100,100"}
+Then I help them be strategic about what to do in order to improve the system
+
+[[Give me an example]]
+[[Can I see your resume?]] 
+[[There's actually something you could maybe help me with...->I'm interested in hiring you]]
+[[Fine, but what do you actually MAKE?]]
+
+
+
+:: Usually this means [speaker-Tim] {"position":"2750,1750","size":"100,100"}
+Often the strategy work involves lots of communication and storytelling. It depends a lot what the client needs, but that could mean making presentations, websites, a book, or even facilitating a big event. Whatever is needed to help people tell the right story.
+
+[[Like this website!]]
+[[How did you get into this?]]
+
+[[Can I see your resume?]] 
+
+
+:: Was there a project [speaker-Tim] {"position":"2850,675","size":"100,100"}
+Was there a project you had in mind that I could help you with?
+
+[[Actually, there was something...->I'm interested in hiring you]]
+
+[[No, I'm just browsing]]
+
+
+:: Was there anything else [speaker-Tim] {"position":"3600,1800","size":"100,100"}
+Was there anything else you wanted to talk about?
+
+[[Tell me more about yourself->I just want to know a bit about you]] 
+[[No, I'm all good]]
+
+
+:: We should ride together! [speaker-Tim] {"position":"1800,625","size":"100,100"}
+I'm always down! Hit me up at timduschenes@gmail.com. I'm honestly not very fast, but love a scenic route with good food stops.
+
+[[You seem to like food a lot]]
+[[Nice. In the meantime, can I see your resume?->Can I see your resume?]]
+
+
+:: What I make [speaker-Tim] {"position":"2750,1625","size":"100,100"}
+I mostly make print, digital, and experiential stuff to help people understand things both tactically and emotionally. In a lot of projects, I make graphics like sytem maps and user experience journeys.
+
+<% story.showDelayed("Usually this means"); %>
+
+
+:: What I've done [speaker-Tim] {"position":"3050,2100","size":"100,100"}
+I spent a few years consulting at SYPartners, then worked for the Public Policy Lab, as well as being a fellow at the Urban Design Forum.
+
+[[Can I see your resume?]]
+[[What makes you happy outside of work?->What are some things that make you happy?]]
+
+
+:: What are some things that make you happy? [speaker-Tim] {"position":"1975,375","size":"100,100"}
+I love food, and I love cooking for people. I spend most of my time at home in my kitchen.
+
+<% story.showDelayed("I also bike a lot"); %>
+
+
+:: What kind of thing [speaker-Tim] {"position":"3650,1100","size":"100,100"}
+What kind of thing do you need help with?
+
+[[Strategy]]
+[[Service design]]
+[[Design research or codesign]]
+[[Branding]]
+[[Actually, I need help figuring that out]]
+
+
+:: What kind of things do people hire you for? [speaker-Tim] {"position":"2750,1250","size":"100,100"}
+Usually, people hire me when they're working on a messy system (healthcare, government benefits, corporate data systems, etc.). I help them analyze and understand the system, and see how it affects the people and places around them.
+
+<% story.showDelayed("Then I help them"); %>
+
+
+:: What kind of work do you do? [speaker-Tim] {"position":"2750,1125","size":"100,100"}
+I'm a designer! I do some mix of strategy, service design, codesign, and experience design
+
+[[Can I see your resume?]] 
+[[What kind of things do people hire you for?]]
+
+
+
+:: What other personal things have you been working on recently? [speaker-Tim] {"position":"2300,1800","size":"100,100"}
+I made a giant book of Christmas carols for my family! It was a huge project. I'm also learning beginner Chinese. My big goal for this year is to produce some music.
+
+[[What are some other things that make you happy?->What are some things that make you happy?]]
+
+
+:: What've you been cooking recently? [speaker-Tim] {"position":"2000,650","size":"100,100"}
+I actually keep a running spreadsheet of the more interesting dishes. I'll turn it into a website eventually. Send me a message at timduschenes@gmail.com if you want a sneak preview or any recipes!
+
+[[You seem to like food a lot]]
+[[Do you make a lot of websites?]]
+
+
+:: Yes, I am! [speaker-Tim] {"position":"2250,750","size":"100,100"}
+Great! Which borough are you in?
+
+[[Manhattan]]
+[[Queens]]
+[[Brooklyn]]
+[[Staten Island]]
+[[The Bronx]]
+
+
+:: You seem to like food a lot [speaker-Tim] {"position":"1800,750","size":"100,100"}
+Yeah it's a big personal and professional interest
+
+<% story.showDelayed("I can go all day without thinking about design"); %>
+
+
+:: You spell 'colors' with a 'u'? [speaker-Tim] {"position":"4300,1425","size":"100,100"}
+lol yes. I spent years 2-18 of my life in England, and 'colors' never looks right to me.
+
+<% story.showDelayed("Don't worry"); %>
+
+
+:: You too [speaker-Tim] {"position":"3775,2275","size":"100,100"}
+Have a good rest of your day, and let's talk soon!
+
+<% story.showDelayed("Thanks"); %>
+
+
+:: hrmm that doesn't sound quite right [speaker-Tim] {"position":"3775,1550","size":"100,100"}
+No worries. Do you want to ask about something else?
+
+[[Sure->What kind of thing]]
+[[No it's ok->Was there anything else]] 
+
+
+:: StoryScript [script]
+window.onload = function () {
+  window.scrollTo(0, 0);
+}
+
+:: StoryStylesheet [stylesheet]
+:root {
+  --bg-color: #121212;
+  --user-color: white; /*uh oh what does this do*/
+  --speaker-color: #FFF;
+  --sidebar-bg-color: #121212;
+  --navbar-bg-color: #121212;
+  --passage-bg-color: #FFFFFF0D;
+  --passage-text-color: #FFF;
+  --navbar-height: 0px;
+  --user-response-panel-height: 192px;
+}
+
+.bg-white {
+  /* overriding an !important in the source*/
+  background-color: #121212 !important;
+}
+
+/*Set colour of non-speaker passages*/
+.meta-passage p {
+  color: #888;
+}
+
+a {
+  color: #7AA5EF;
+}
+
+a:hover {
+  color: #5688DF;
+}
+
+/*Set height of elements*/
+.minh-full {
+    min-height: calc(100vh - var(--navbar-height) - var(--user-response-panel-height))
+}
+
+body {
+  margin-bottom: calc(var(--user-response-panel-height));
+}
+
+.navbar {
+  display: none;
+}
+
+/*Chat panel*/
+.chat-panel{
+  padding-bottom: 8px;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  /*Set the typography for the main */
+  line-height: 1.3;
+}
+
+/*User response panel*/
+.user-response-panel hr {
+  display: none;
+}
+
+#user-response-hint {
+  display: none;
+}
+
+.user-response-panel {
+  box-sizing: border-box;
+  /*border-top: 2px dotted white;*/
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  background-color: #202020;
+  padding: 0px;
+}
+
+/*Removing panel borders at smaller sizes*/
+@media (max-width: 991.98px){
+  .chat-panel {
+    border-left: none;
+    border-right: none;
+  }
+  
+  .user-response-panel {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/*User response alignment*/
+.user-reponse-wrapper {
+  /*NOTE THE TYPO HERE IS CORRECT*/
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-bottom: 12px;
+  padding-left: 15px;
+}
+
+a.user-response:first-child {
+  margin-top: 12px;
+}
+
+.user-response-panel .user-response {
+  margin-right: 15px !important;
+}
+
+.user-response-panel .user-response {
+  display: inline-block;
+  border-radius: 18px 18px 0 18px;
+  padding: 7px 12px;
+  margin: 0.25rem;
+  background-color: none;
+  color: white;
+  border: 1px solid #666;
+  transition: none;
+  /*transition: border-color .15s ease-in;*/
+}
+
+.user-response:hover {
+  text-decoration: none;
+  background-color: #444;
+  border: 1px solid white;
+  /*Note that border is being applied by user colour*/
+}
+
+/*Chat passages*/
+.chat-passage {
+  color: #FFF;
+  padding: 7px 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.chat-passage[data-speaker='Tim'] {
+  border-radius: 18px 18px 18px 0;
+}  
+
+.chat-passage[data-speaker='you'] {
+  border-radius: 18px 18px 0 18px;
+  margin-right: 0;
+  background-color: #FFFFFF33;
+}
+
+/*Hiding all the extra stuff*/
+.chat-passage:before {
+  display: none;
+}
+.chat-passage-wrapper[data-speaker='Tim']:before {
+  display: none;
+}
+.chat-passage-wrapper[data-speaker='you']:after {
+  display: none;
+}
+.chat-passage-wrapper[data-speaker='you'] .chat-passage::before {
+  display: none;
+}
+
+/*Custom scrollbar*/
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 none;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: none;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: none;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #888;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #FFFFFF;
+}
+
+
+
+
