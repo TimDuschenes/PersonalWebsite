@@ -54,7 +54,52 @@ li {
 }
 
 
+#chatButton {
+	position: fixed;
+	margin: 0;
+	bottom: 40px;
+	right: 0;
+	padding: 12px;
+	height: 60px;
+	width: 120px;
+	overflow: hidden;
+	transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  background-color: #00000022;
+}
 
+#chatButton:hover {
+	width: 220px;
+}
+
+#chatIcon {
+	background-color: #202020;
+	color: #FFF;
+	height: 36px;
+	width: 96px;
+	border-radius: 18px 18px 0 18px;
+	float: left;
+	padding: 11px 0;
+	margin-bottom: 12px;
+	text-align: center;
+	font-size: 0.7em;
+}
+
+#chatButtonText {
+	float: left;
+	width: 80;
+	margin: 0 0 0 12px;
+	padding: 0;
+	color: black;
+}
+
+/*.dot{
+	width: 8px;
+	height: 8px;
+	margin: 4px;
+	border-radius: 4px;
+	background-color: lightgreen;
+}*/
 
   /* For desktop: */
 @media only screen and (min-width: 768px) {
